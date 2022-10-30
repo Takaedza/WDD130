@@ -121,7 +121,7 @@ main section {
 .home-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    /*grid-template-rows: repeat(8, 1fr);*/
 }
 #background {
     height: 725px;
@@ -188,8 +188,9 @@ nav a:hover{
     color:black;
     line-height:1.5em;
     grid-column: 6/10;
-    grid-row: 6/7;
+    grid-row: 6/span 1;
     box-shadow: 5px 5px 10px #6f7364;
+    z-index: 3;
 }
 .msg p{
     padding: 15px;
