@@ -76,6 +76,51 @@ main section {
     grid-template-columns: repeat(10, 1fr);
     /*grid-template-rows: repeat(8, 1fr);*/
 }
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr)
+}
+.blog-header{
+    padding: 15px 30px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color:blue;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.summer, .highlights{
+    margin: 400px 0;
+    grid-row: 2/4;
+    width: 450px;
+    height: fit-content;
+}
+.summer{
+    grid-column: 1/2;
+    z-index: 2;
+}
+    
+.highlights{
+    grid-column: 3/4;
+    z-index: 3;
+}
+.encounter{
+    width: 900px;
+    height: fit-content;
+    grid-column: 4/6;
+    z-index: 4;
+}
+.wild{
+    text-align: center;
+}
+.first, .second, .third, .fourth, .fifth, .sixth, .seventh{
+    text-align: justify;
+    width: 800px;
+
+}
 #background {
     height: 725px;
     background-color:#d9c2a3;
@@ -121,7 +166,7 @@ nav a:hover{
     transform: scale(1.1);
 }
            
-.book, .join{
+.book, .join, .blog{
     padding: 15px 30px;
     background-color:whitesmoke;
     color:blue;
