@@ -82,6 +82,18 @@ main section {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr)
 }
+.paintings{
+    grid-template-columns: repeat(3,1fr)
+}
+.paint1-img{
+    grid-column: 1/2;
+}
+.paint2-img{
+    grid-column: 2/3;
+}
+.paint3-img{
+    grid-column: 3/4;
+}
 .blog-header{
     padding: 15px 30px;
     grid-column: 1/2;
@@ -210,6 +222,7 @@ form {
     z-index: 1;
 }
 body{
+    display: grid;
     font-family: var(--paragraph-font);
     background-color:#dee5f1;
     color:black;
@@ -286,6 +299,66 @@ footer{
 .icon {
     padding-top: 10px;
     width: 80px;
+}
+.paint1-img, .paint2-img, .paint3-img, .book1-img, .book2-img, .book3-img, .event1-img, .event2-img, .event3-img{
+    width: 30%;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.paintings{
+    grid-column: 1 / -1;
+    grid-row: 1/ span 1;
+}
+.paint1-img{
+    grid-column: 1/2;
+}
+.paint2-img{
+    grid-column: 2/3;
+}
+.paint3-img{
+    grid-column: 3/4;
+}
+.sculputure{
+    grid-column: 1 / -1;
+    grid-row: 2/ span 1;
+}
+.sculp1-img{
+    grid-column: 1/2;
+}
+.sculp2-img{
+    grid-column: 2/3;
+}
+.sculp3-img{
+    grid-column: 3/4;
+}
+.books{
+    grid-column: 1 / -1;
+    grid-row: 3/ span 1;
+}
+.book1-img{
+    grid-column: 1/2;
+}
+.book2-img{
+    grid-column: 2/3;
+}
+.book3-img{
+    grid-column: 3/4;
+}
+.events{
+    grid-column: 1 / -1;
+    grid-row: 4 / span 1
+}
+.event1-img{
+    grid-column: 1/span 1;
+}
+.event2-img{
+    grid-column: 2/span 1;
+}
+.event3-img{
+    grid-column: 3/span 1;
 }
 .logo{
     padding-top: 5px;
