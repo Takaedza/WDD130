@@ -303,6 +303,9 @@ footer{
 .paint1-img, .paint2-img, .paint3-img, .book1-img, .book2-img, .book3-img, .event1-img, .event2-img, .event3-img{
     width: 30%;
 }
+.sculp1-img, .sculp2-img, .sculp3-img {
+    width: 90%
+}
 .gallery-grid{
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
